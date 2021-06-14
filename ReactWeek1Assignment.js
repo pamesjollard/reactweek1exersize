@@ -1,8 +1,8 @@
 class Student {
-    constructor(nameParam, emailParam, communityParam) {
-        this.name = nameParam;
-        this.email = emailParam;
-        this.community = communityParam;
+    constructor(name, email, community) {
+        this.name = name;
+        this.email = email;
+        this.community = community;
     }
 }
 
@@ -11,17 +11,17 @@ class Bootcamp {
         this.name = name;
         this.level = level;
         this.students = students;
-    }
+    };
 
     registerStudent(student) {
         if(this.students.filter(student => student.email === student.email.length)) 
-        console.log(`The student ${student.email} is already registered.`)
-        
-    } 
-    
+        console.log(`The student ${student.email} is already registered.`);
 
-   
-};
+        return; 
+    };  
+}
+
+
 
 
  //write some code that can add a student to our students 
